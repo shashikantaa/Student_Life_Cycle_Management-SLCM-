@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SLCM</string>
+    <!--login-->
+    <string name="slcm">SLCM</string>
+    <string name="student_sign_in_title">Student: Sign In</string>
+    <string name="faculty_sign_in_title">Faculty: Sign In</string>
+    <string name="registration_no">Registration Number:</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="faculty_login_link"><u>Faculty Login</u></string>
+    <string name="student_login_link"><u>Student Login</u></string>
+    <string name="new_password">New password:</string>
+    <string name="confirm_password">Confirm Password:</string>
+
+    <string name="announcements">Announcements</string>
+    <string name="time_table">Time Table</string>
+    <string name="attendance">Attendance</string>
+    <string name="internal_marks">Internal Marks</string>
+    <string name="marksheet">Mark Sheet</string>
+    <string name="fees">Fees</string>
+    <string name="profile">Profile</string>
+    <string name="log_out">Log out</string>
+    <string name="fac_create_announcement">Create Announcement</string>
+    <string name="fac_view_announcements">View Announcements</string>
+    <string name="fac_submit">Submit</string>
+    <string name="fac_date_day">Day:</string>
+    <string name="fac_date_val">Date:</string>
+    <string name="next">Next</string>
+    <string name="Fac_Class"><![CDATA[Select your class & section:]]></string>
+
+    <!--student_internal_marks-->
+    <string name="title">Subject code: MCA 4245 Data Analytics</string>
+    <string name="assessment_type">Assignment 1</string>
+
+    <string-array name="semesters">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+    </string-array>
+</resources>

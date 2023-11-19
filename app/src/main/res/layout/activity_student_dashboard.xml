@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Student.StudentDashboard">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
+    <GridLayout
+        android:id="@+id/Btn_Layout"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="5dp"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <Button
+            android:id="@+id/BtnAnnouncement"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="@string/announcementsdashboard"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/BtnTimeTable"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/time_tabledashboard"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/BtnAttendance"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:background="@drawable/rounded_button"
+            android:text="@string/attendancedashboard"
+            android:textSize="11sp" />
+
+        <!-- Second Row -->
+        <Button
+            android:id="@+id/BtnInternalMarks"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="@string/internal_marks"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/BtnMarkSheet"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="@string/marksheet"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/BtnFees"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/fees"
+            android:textSize="11sp" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/Btn_Layout"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Announcements"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtHeading"
+        android:paddingHorizontal="15dp">
+
+        <ListView
+            android:id="@+id/ann_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:divider="@null"
+            tools:listitem="@layout/activity_faculty_announcement_list_item"
+
+            />
+    </RelativeLayout>
+    <include layout="@layout/activity_chat_floating_button" />
+
+</RelativeLayout>

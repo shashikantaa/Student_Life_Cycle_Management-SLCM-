@@ -1,0 +1,28 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Faculty.FacultyTimetable">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_table"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/faculty_time_table"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_below="@id/heading"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/time_table"
+        android:src="@drawable/timetable1">
+    </ImageView>
+    <include layout="@layout/activity_chat_floating_button" />
+</RelativeLayout>

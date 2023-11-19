@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Student.StudentAnnouncements">
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp">
+
+        <ListView
+            android:id="@+id/announcement_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:divider="@null"
+            tools:listitem="@layout/activity_faculty_announcement_list_item"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/announcement_ListView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            app:shapeAppearance="@style/Widget.AppCompat.Button.Small"
+            android:backgroundTint="@android:color/white"
+            app:borderWidth="@dimen/cardview_compat_inset_shadow"
+            android:src="@drawable/message"
+            android:contentDescription="Chat" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

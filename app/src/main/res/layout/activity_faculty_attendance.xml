@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pagelayout">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/pagedetails"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="15dp"
+    android:textStyle="bold"
+    android:padding="5dp"
+    android:textColor="@color/blue"
+    android:textSize="14dp">
+</TextView>
+    <Button
+        android:id="@+id/Fac_Submit_Att_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="13dp"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/fac_submit"
+        app:cornerRadius="8dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/pagelayout"
+        android:id="@+id/line"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray" />
+    <TextView
+
+        android:id="@+id/Fac_Att_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Btn_Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/students"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/Fac_Stud_Att_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Fac_Att_Title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:padding="20dp"
+        tools:listitem="@layout/activity_faculty_attendance_list_item" />
+
+    <LinearLayout
+        android:id="@+id/Btn_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/all_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/all_present"
+            android:textSize="11sp"
+            app:cornerRadius="8dp" />
+
+        <Button
+            android:id="@+id/all_absent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/maroon"
+            android:text="@string/all_absent"
+            android:textSize="11sp"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+</RelativeLayout>
